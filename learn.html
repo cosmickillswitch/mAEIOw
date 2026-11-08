@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#B4561A">
+<meta name="description" content="Categorical logic: build syllogisms from A, E, I and O statements and check them with Venn diagrams.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<title>mAEIOw · Learn</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=STIX+Two+Text:ital,wght@0,400;0,600;1,400&display=swap">
+<link rel="stylesheet" href="workbench.css">
+<link rel="stylesheet" href="learn.css">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="brand">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><clipPath id="lensL"><circle cx="88" cy="110" r="21"/></clipPath></defs>
+<rect x="0" y="0" width="200" height="200" rx="44" fill="#E07B39"/>
+<path d="M42 96 L48 30 L94 62 Z" fill="#2A2933" stroke="#2A2933" stroke-width="6" stroke-linejoin="round"/>
+<path d="M158 96 L152 30 L106 62 Z" fill="#2A2933" stroke="#2A2933" stroke-width="6" stroke-linejoin="round"/>
+<circle cx="100" cy="114" r="66" fill="#2A2933"/>
+<text x="60" y="70" text-anchor="middle" font-family="DM Sans, Arial, sans-serif" font-weight="700" font-size="20" fill="#F6E7C8">A</text>
+<text x="140" y="70" text-anchor="middle" font-family="DM Sans, Arial, sans-serif" font-weight="700" font-size="20" fill="#F6E7C8">E</text>
+<circle cx="112" cy="110" r="21" fill="#F2C14E" clip-path="url(#lensL)"/>
+<circle cx="88" cy="110" r="21" fill="none" stroke="#F6E7C8" stroke-width="4"/>
+<circle cx="112" cy="110" r="21" fill="none" stroke="#F6E7C8" stroke-width="4"/>
+<text x="79" y="115" text-anchor="middle" font-family="DM Sans, Arial, sans-serif" font-weight="700" font-size="14" fill="#F6E7C8">I</text>
+<text x="122" y="115" text-anchor="middle" font-family="DM Sans, Arial, sans-serif" font-weight="700" font-size="14" fill="#F6E7C8">O</text>
+<path d="M95 139 L105 139 L100 145 Z" fill="#F2A3A0"/>
+<path d="M86 152 Q93 162 100 152 Q107 162 114 152" fill="none" stroke="#F6E7C8" stroke-width="4" stroke-linecap="round"/>
+<path d="M66 140 L34 134 M66 148 L36 152 M134 140 L166 134 M134 148 L164 152" stroke="#F6E7C8" stroke-width="3" stroke-linecap="round"/></svg>
+    <div><h1>mAEIOw<span class="testflag">Test</span></h1><p>Categorical logic: All, No, Some, Some…not.</p></div>
+  </header>
+  <nav class="appnav" aria-label="Sections"><a href="index.html">Workbench</a><a href="diagrams.html">Diagrams</a><a href="learn.html" aria-current="page">Learn</a></nav>
+  <div class="ltabs" id="ltabs" role="tablist"></div>
+  <div class="search" id="searchrow"><label for="q" style="position:absolute;left:-9999px">Search</label><input id="q" type="search" placeholder="Search the glossary"></div>
+  <div class="list" id="list"></div>
+</div>
+<script src="learn-content.js"></script>
+<script src="learn.js"></script>
+<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));}</script>
+</body>
+</html>
